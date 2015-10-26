@@ -398,6 +398,5 @@ Game_Interpreter.prototype.pluginCommand = function(command, args) {
     Nasty_picWindow_change_Game_Interpreter_pluginCommand.call(this, command, args);
     if (command === 'ChangeWindowPic') {
       Nasty.Param.PicWindow_Obj[args[0]] = args[1];
-      console.log(Nasty.Param.PicWindow_Obj);
     }
   };
