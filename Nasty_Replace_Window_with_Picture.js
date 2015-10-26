@@ -1,6 +1,6 @@
 //=============================================================================
 // Nasty Replace Window with Picture
-// Version: 1.00
+// Version: 1.0.1
 //=============================================================================
 
 var Imported = Imported || {};
@@ -350,6 +350,7 @@ String(Nasty.Parameters['Window 30 Picture Name']);
 
 
 // Window_Base prototype and aliasing
+var Nasty_winpic_sprite = {};
 var NASTY_PicWindow_Window_Base_Redo = Window_Base.prototype.initialize;
 Window_Base.prototype.initialize = function(x, y, width, height){
   //Aliases must have *this* as the first argument
@@ -358,7 +359,7 @@ Window_Base.prototype.initialize = function(x, y, width, height){
   var Nasty_list_of_winpic_keys = Object.keys(Nasty.Param.PicWindow_Obj);
   if (Nasty_list_of_winpic_keys.contains(this.constructor.name)){
     if (Nasty.Param.PicWindow_Obj[this.constructor.name]){
-      var Nasty_winpic_sprite = new Sprite_Base();
+      Nasty_winpic_sprite = new Sprite_Base();
       Nasty_winpic_sprite.bitmap =
         ImageManager.loadPicture(Nasty.Param.PicWindow_Obj[this.constructor.name]);
       this.addChildToBack(Nasty_winpic_sprite);
@@ -371,5 +372,17 @@ Window_Base.prototype.initialize = function(x, y, width, height){
   }
   if (Nasty.Param.PicWindow_Debug_Mode === 'true'){
     console.log(this.constructor.name+" Width: "+this.width+" Height: "+ this.height);
+  }
+};
+
+var NASTY_PicWindo_setBckrd_type_Redo = Window_Base.prototype.setBackgroundType;
+Window_Base.prototype.setBackgroundType = function(type) {
+  if (Nasty_winpic_sprite){
+    if (type === 0) {
+        Nasty_winpic_sprite.opacity = 255;
+    } else {
+        Nasty_winpic_sprite.opacity = 0;
+    }
+    NASTY_PicWindo_setBckrd_type_Redo.call(this, type);
   }
 };
