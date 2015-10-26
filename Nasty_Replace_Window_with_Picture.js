@@ -272,6 +272,17 @@ var Nasty = Nasty || {};
  * nifty debug tool.  This will give you a list of all window objects that
  * are currently loading, and will also tell you the width and height!
  *
+ * You can also change windows on the fly with the Plugin Command:
+ * ChangeWindowPic Window_Object PictureName
+ *
+ * Ex:
+ * ChangeWindowPic Window_Status Pic3
+ *
+ * This would change the Status Window background to pic3 in the
+ * img/pictures folder!
+ *
+ *
+ *
  * HAVE FUN!
  */
 //=============================================================================
