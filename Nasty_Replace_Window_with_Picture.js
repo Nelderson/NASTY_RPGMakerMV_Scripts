@@ -1,6 +1,6 @@
 //=============================================================================
 // Nasty Replace Window with Picture
-// Version: 1.0.1
+// Version: 1.0.2
 //=============================================================================
 
 var Imported = Imported || {};
@@ -386,3 +386,18 @@ Window_Base.prototype.setBackgroundType = function(type) {
     NASTY_PicWindo_setBckrd_type_Redo.call(this, type);
   }
 };
+
+//=============================================================================
+// Game_Interpreter - New Plugin Commands
+//=============================================================================
+
+Nasty_picWindow_change_Game_Interpreter_pluginCommand =
+    Game_Interpreter.prototype.pluginCommand;
+
+Game_Interpreter.prototype.pluginCommand = function(command, args) {
+    Nasty_picWindow_change_Game_Interpreter_pluginCommand.call(this, command, args);
+    if (command === 'ChangeWindowPic') {
+      Nasty.Param.PicWindow_Obj[args[0]] = args[1];
+      console.log(Nasty.Param.PicWindow_Obj);
+    }
+  };
