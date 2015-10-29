@@ -1,6 +1,6 @@
 //=============================================================================
 // Nasty Replace Window with Picture
-// Version: 1.0.2
+// Version: 1.0.3
 //=============================================================================
 
 var Imported = Imported || {};
@@ -11,6 +11,7 @@ var Nasty = Nasty || {};
 //=============================================================================
  /*:
  * @plugindesc Use pictures instead of the windowskin image!
+ *<Nasty_Replace_Window_with_Picture>
  * @author Nelderson
  *
  * @param Debug Mode?
@@ -291,7 +292,10 @@ var Nasty = Nasty || {};
 // Parameter Variables
 //=============================================================================
 
-Nasty.Parameters = PluginManager.parameters('Nasty_Replace_Window_with_Picture');
+Nasty.Parameters = $plugins.filter(function(p)
+   { return p.description.contains('<Nasty_Replace_Window_with_Picture>');
+   })[0].parameters;
+
 Nasty.Param = Nasty.Param || {};
 
 Nasty.Param.PicWindow_Obj = {};
