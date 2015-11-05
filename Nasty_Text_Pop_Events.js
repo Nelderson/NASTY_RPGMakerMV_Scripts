@@ -13,7 +13,7 @@ var Nasty = Nasty || {};
  * @author Nelderson
  *
  * @param Font Size 1
- * @desc USize of the font to be displayed.
+ * @desc Size of the font to be displayed.
  * @default 28
  *
  * @param Font Color 1
@@ -35,10 +35,6 @@ var Nasty = Nasty || {};
  * @param Font italic? 1
  * @desc Do you want Italic font?
  * @default false
- *
- * @param Time 1
- * @desc Time before text disappers.  Set to 0 for eternal.
- * @default 120
  *
  *@param =============
  *
@@ -66,10 +62,6 @@ var Nasty = Nasty || {};
  * @desc Do you want Italic font?
  * @default false
  *
- * @param Time 2
- * @desc Time before text disappers.  Set to 0 for eternal.
- * @default 120
- *
  *@param =============
  *
  * @param Font Size 3
@@ -95,10 +87,6 @@ var Nasty = Nasty || {};
  * @param Font italic? 3
  * @desc Do you want Italic font?
  * @default false
- *
- * @param Time 3
- * @desc Time before text disappers.  Set to 0 for eternal.
- * @default 120
  *
  *@param =============
  *
@@ -126,10 +114,6 @@ var Nasty = Nasty || {};
  * @desc Do you want Italic font?
  * @default false
  *
- * @param Time 4
- * @desc Time before text disappers.  Set to 0 for eternal.
- * @default 120
- *
  *@param =============
  *
  * @param Font Size 5
@@ -155,10 +139,6 @@ var Nasty = Nasty || {};
  * @param Font italic? 5
  * @desc Do you want Italic font?
  * @default false
- *
- * @param Time 5
- * @desc Time before text disappers.  Set to 0 for eternal.
- * @default 120
  *
  *@param =============
  *
@@ -186,9 +166,6 @@ var Nasty = Nasty || {};
  * @desc Do you want Italic font?
  * @default false
  *
- * @param Time 6
- * @desc Time before text disappers.  Set to 0 for eternal.
- * @default 120
  *
  *@param =============
  *
@@ -216,10 +193,6 @@ var Nasty = Nasty || {};
  * @desc Do you want Italic font?
  * @default false
  *
- * @param Time 7
- * @desc Time before text disappers.  Set to 0 for eternal.
- * @default 120
- *
  *@param =============
  *
  * @param Font Size 8
@@ -245,10 +218,6 @@ var Nasty = Nasty || {};
  * @param Font italic? 8
  * @desc Do you want Italic font?
  * @default false
- *
- * @param Time 8
- * @desc Time before text disappers.  Set to 0 for eternal.
- * @default 120
  *
  *@param =============
  *
@@ -276,10 +245,6 @@ var Nasty = Nasty || {};
  * @desc Do you want Italic font?
  * @default false
  *
- * @param Time 9
- * @desc Time before text disappers.  Set to 0 for eternal.
- * @default 120
- *
  *@param =============
  *
  * @param Font Size 10
@@ -305,10 +270,6 @@ var Nasty = Nasty || {};
  * @param Font italic? 10
  * @desc Do you want Italic font?
  * @default false
- *
- * @param Time 10
- * @desc Time before text disappers.  Set to 0 for eternal.
- * @default 120
  *
  *@param =============
  *
@@ -348,7 +309,7 @@ var Nasty = Nasty || {};
  * Ex.  NastyTextPop -1 1 120 Tesing This!
  *
  *  This would show "Testing This!" over the Player for 120
- *  frmes and use the settings in the first plugin spot.
+ *  frames and use the settings in the first plugin spot.
  *
  *
  * HAVE FUN!
