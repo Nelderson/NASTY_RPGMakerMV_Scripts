@@ -1,6 +1,6 @@
 //=============================================================================
 // Nasty Replace Window with Picture
-// Version: 1.0.3
+// Version: 1.0.4
 //=============================================================================
 
 var Imported = Imported || {};
@@ -291,6 +291,9 @@ var Nasty = Nasty || {};
 //=============================================================================
 // Parameter Variables
 //=============================================================================
+Nasty.Replace_Window_with_Pic = Nasty.Replace_Window_with_Pic || {};
+
+(function($){
 
 Nasty.Parameters = $plugins.filter(function(p)
    { return p.description.contains('<Nasty_Replace_Window_with_Picture>');
@@ -415,3 +418,4 @@ Game_Interpreter.prototype.pluginCommand = function(command, args) {
       Nasty.Param.PicWindow_Obj[args[0]] = args[1];
     }
   };
+})(Nasty.Replace_Window_with_Pic);
