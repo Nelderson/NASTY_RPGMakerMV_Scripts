@@ -1,6 +1,6 @@
 //=============================================================================
 // Nasty Text Pop Over Event
-// Version: 1.1.0
+// Version: 1.1.1
 //=============================================================================
 var Imported = Imported || {};
 Imported.Nasty_Event_Text_Pop = true;
@@ -622,7 +622,7 @@ Sprite_Character.prototype.start_namepop = function(){
       }
     }else {
       //All other Windows
-      Nasty_TxtPop_drawTextEx_alias.call(this,text, x, y);
+      return Nasty_TxtPop_drawTextEx_alias.call(this,text, x, y);
     }
   };
 
