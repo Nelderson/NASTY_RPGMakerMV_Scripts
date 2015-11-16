@@ -1,6 +1,6 @@
 //=============================================================================
 // Nasty Text Pop Over Event
-// Version: 1.1.1
+// Version: 1.1.2
 //=============================================================================
 var Imported = Imported || {};
 Imported.Nasty_Event_Text_Pop = true;
@@ -418,8 +418,9 @@ var Nasty = Nasty || {};
 //=============================================================================
 // Parameter Variables
 //=============================================================================
+Nasty.Event_Text_Pop = Nasty.Event_Text_Pop || {};
 
-
+(function ($) {
 Nasty.Parameters = $plugins.filter(function(p)
    { return p.description.contains('<Nasty_Text_Pop_Over_Events>');
    })[0].parameters;
@@ -730,3 +731,4 @@ var Nasty_txtpop_standardpadding_alias = Window_Base.prototype.standardPadding;
           return null;
       }
   };
+})(Nasty.Event_Text_Pop);
