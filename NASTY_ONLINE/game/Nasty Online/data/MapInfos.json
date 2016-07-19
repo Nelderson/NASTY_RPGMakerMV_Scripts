@@ -1,0 +1,8 @@
+[
+null,
+{"id":1,"expanded":true,"name":"MAP001","order":1,"parentId":0,"scrollX":832,"scrollY":640},
+{"id":2,"expanded":false,"name":"MAP002","order":4,"parentId":0,"scrollX":998,"scrollY":633},
+{"id":3,"expanded":false,"name":"Character Selection Map","order":5,"parentId":0,"scrollX":598.8,"scrollY":379.8},
+{"id":4,"expanded":true,"name":"Abandoned Town","order":2,"parentId":1,"scrollX":1188,"scrollY":623},
+{"id":5,"expanded":false,"name":"Snow Town","order":3,"parentId":4,"scrollX":982,"scrollY":633}
+]
