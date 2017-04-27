@@ -1,11 +1,11 @@
 NASTY RPG Maker MV Scripts
 ==========================
-Multiplayer/MMO support for RPG Maker MV
+Plugins for RPG Maker MV
 
 Documentation
 -------------
 
-Documentation is located in client and server directories.
+Documentation is located within each individual plugin
 
 Terms of Use
 ------------
